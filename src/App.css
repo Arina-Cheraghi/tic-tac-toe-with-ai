@@ -1,0 +1,85 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff5e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #141e46;
+}
+
+.board {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.board > div {
+  background-color: #ff6969;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.board > div:hover {
+  background-color: #c70039;
+}
+
+.board > div:active {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.37);
+  margin: -2px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+.cell.filled {
+  cursor: not-allowed;
+}
+
+.winner {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #141e46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #141e46;
+  color: #fff5e0;
+  border-radius: 10px;
+}
