@@ -1,5 +1,5 @@
 <h1>
-  <a href="https://vercel.live/link/tic-tac-toe-with-ai-six.vercel.app?via=new-project-success&p=1">
+  <a target="blank" href="https://tic-tac-toe-with-ai-six.vercel.app/">
     DEMO
   </a>
 </h1>
